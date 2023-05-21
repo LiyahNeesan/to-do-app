@@ -1,10 +1,89 @@
 .App {
-  text-align: center;
+  margin: 50px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.container-button {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 150px;
+}
+
+.todo-buttons {
+  font-weight: 700;
+  font-size: 14px;
+  width: 84px;
+  height: 40px;
+  background: linear-gradient(
+      0deg,
+      rgba(8, 30, 52, 0.05),
+      rgba(8, 30, 52, 0.05)
+    ),
+    #f0f0f0;
+  border-radius: 100px;
+  border: none;
+  margin-right: 16px;
+}
+
+.modal {
+    position: absolute;
+    top: 70px;
+    right: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 10px;
+    width: 268px;
+    height: 234px;
+    background: #e4e6e7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+  }
+
+
+.todo-buttons:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.button {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+}
+
+.button-text {
+  margin: 0px;
+  font-size: 25px;
+}
+
+.endpage {
+  margin: 288px 0 42px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+}
+
+.endpage-credits {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #081e34;
+  opacity: 0.5;
 }
 
 @media (prefers-reduced-motion: no-preference) {
